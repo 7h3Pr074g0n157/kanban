@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Kanban Board</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="create-task">
+        <div class="create-task__group-selection">
+          <label for="task-group-new" class="task-group"
+            ><input
+              type="radio"
+              name="task-group"
+              id="task-group-new"
+              class="task-group__option"
+              checked
+            />New Tasks</label
+          >
+          <label for="task-group-progress" class="task-group">
+            <input
+              type="radio"
+              name="task-group"
+              id="task-group-progress"
+              class="task-group__option"
+            />Tasks in Progress</label
+          >
+          <label for="task-group-finished" class="task-group">
+            <input
+              type="radio"
+              name="task-group"
+              id="task-group-finished"
+              class="task-group__option"
+            />Finished Tasks</label
+          >
+        </div>
+        <div class="create-task__input-section">
+          <input type="text" class="create-task__input" />
+          <button class="create-task__submit">Create Task</button>
+        </div>
+      </section>
+      <section class="task-lists">
+        <div class="task-list">
+          <h2 class="task-list__heading">New Tasks</h2>
+          <ul id="task-list-new" class="task-list__list"></ul>
+        </div>
+        <div class="task-list">
+          <h2 class="task-list__heading">Tasks in Progress</h2>
+          <ul id="task-list-progress" class="task-list__list"></ul>
+        </div>
+        <div class="task-list">
+          <h2 class="task-list__heading">Finished Tasks</h2>
+          <ul id="task-list-finished" class="task-list__list"></ul>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+<!-- 
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta neque quis eos temporibus impedit explicabo perspiciatis, facere aliquam corporis? Nobis suscipit nam, tempore voluptates voluptatibus adipisci quibusdam. Illo, impedit ab?
+-->
